@@ -1,0 +1,12 @@
+{
+  "name": "docker-certbot",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alef Bruno Delpino de Oliveira",
+    "email": "alef@delpinos.com"
+  },
+  "scripts": {
+    "start": "./start.sh",
+    "stop": "./stop.sh"
+  }
+}

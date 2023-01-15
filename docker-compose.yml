@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  certbot:
+    image: delpinos/certbot
+    hostname: certbot
+    container_name: certbot
+    network_mode: bridge
+    environment:
+      CERTBOT_DOMAINS: "www.delpinos.com"
+      CERTBOT_EMAILS: "certbot@delpinos.com"
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    privileged: true
+    tty: true
